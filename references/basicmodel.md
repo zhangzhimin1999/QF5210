@@ -52,3 +52,54 @@ just like doing during get α ,we can get beta similarly .
 
 regrassion details:
 -----
+
+
+simulation details:
+---
+
+
+uneployment:
+---
+talking about unemployment , we believe there is 3 main reasons : macro economy , government attitude , and the covid sitruation . they may have correlation themselves , but they will affect unenployment independently , let U means unenployment , let i length vctor E means macro economy , let j length vctor G means goveronment's reaction toward them.
+
+mathly speaking , because we believe unenployment can't get too high , the PDE between E,G,U must be dominated by some mechenisam that can push back the too high U.
+but since assuming that PDE is a linear one is naive and unreasonable , and the PDE may also change during a long proid . 
+
+so the only thing we can do to get some info of the solution of that PDE , is to learn about the data from 2020apr on.
+
+thanks god , after we do DFT , we observed a strong patern in the spectrum : there is nothing significent if ν > ν$_0$ where:
+$$
+ν_0 = 0.1875^{-month} .
+$$
+this means that the they may probably be the noise . we canuse a filter function to reduce them .
+
+if we want a more effencient filter , we may first do interpolation on the row data . then we use a low-pass filter to reduce the noise . by chosing different interpolation methord and low-pass filter function , we can get different U$_t$ time serious. 
+
+we can select the most useful one by the evalution payoff function:
+
+$$
+P = \sum_{i|u_i\ maches\  u_{i0}\ in\ raw\ data}(u_i - u_i0)^2*e^{-(i0-17)^2*\nu_0^2/2}
+$$ 
+
+that means for the No.k parimeter θₖ in interpolation and filter :
+$$
+\frac{\partial{P}}{\partial{θₖ}} = 0
+$$
+applying this {θₖ} , we get our final Uₜ from all of what we get. 
+at last we do polynomino regression on  this final Uₜ ~ t:
+$$
+U(t) = U(t₀) + \sum_ic_i(t-t_0)^i
+$$
+since this is a local regrassion , we can't chose Uₜ for too long , we chose t from [t₀ - Δt] where:
+$$
+(ν₀Δt)^{i}/(1-ν₀Δt) < 0.1 
+$$
+if do rank i polynomino regrassion.
+
+after regrassion ,we get cᵢ and can predict $U(t_0 + δt)$ where δt follow the same criteria with Δt.
+
+
+
+
+
+
