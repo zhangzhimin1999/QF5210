@@ -24,9 +24,11 @@ before you coding yourself , please check your upstream and down stream to see i
 
 #### input
 ```
-e,t
-1,1
-1,2
+Condition	Group	Pre1	Pre2	Pre3	Pre4	Learning	Gender
+Low	A	0.77	0.91	0.24	0.72	0.9	M
+Low	A	0.82	0.91	0.62	0.9	0.87	F
+Low	A	0.81	0.7	0.43	0.46	0.9	F
+
 ……
 ```
 
