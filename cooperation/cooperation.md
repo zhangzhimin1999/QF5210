@@ -21,7 +21,30 @@ this is just an example
 this is the progress cooperation strength strongest , every one's work depends on eachother . so the rules here are extremly important:
 ### sample file :
 before you coding yourself , please check your upstream and down stream to see if any of them has already offered a sample file of input/output . if they have , please use them as your coding input/output , else please offer your sample file .
-### test script :
 
+#### input
+```
+e,t
+1,1
+1,2
+……
+```
+
+#### output 
+```
+e,t
+1,1
+1,2
+```
+
+### test script :
+```bash
+(cfa) F:\学习资料\研一上\dsa\project>Rscript toy_model.R
+Warning message:
+Error in resduals(fit1) : 没有"resduals"这个函数
+
+(cfa) F:\学习资料\研一上\dsa\project>
+```
+where input file is a.csv output is b.csv
 
 #  contributions log
