@@ -5,9 +5,9 @@ jun_sep_sg=numeric(4)
 jun_sep_uk=numeric(4)
 jun_sep_us=numeric(4)
 total_world_jun_sep=numeric(4)
-jun_sep_sg[1:4]=c(sum(Jun_to_Sep_newcase_sg[4:33]),sum(Jun_to_Sep_newcase_sg[34:64]),sum(Jun_to_Sep_newcase_sg[65:95]),sum(Jun_to_Sep_newcase_sg[96:122])+sum(oct_real_sg[1:3]))
-jun_sep_uk[1:4]=c(sum(Jun_to_Sep_newcase_uk[4:33]),sum(Jun_to_Sep_newcase_uk[34:64]),sum(Jun_to_Sep_newcase_uk[65:95]),sum(Jun_to_Sep_newcase_uk[96:122])+sum(oct_real_uk[1:3]))
-jun_sep_us[1:4]=c(sum(Jun_to_Sep_newcase_us[4:33]),sum(Jun_to_Sep_newcase_us[34:64]),sum(Jun_to_Sep_newcase_us[65:95]),sum(Jun_to_Sep_newcase_us[96:122])+sum(oct_real_us[1:3]))
+jun_sep_sg[1:4]=c(sum(Jun_to_Sep_newcase_sg[4:33]),sum(Jun_to_Sep_newcase_sg[34:64]),sum(Jun_to_Sep_newcase_sg[65:95]),sum(Jun_to_Sep_newcase_sg[96:122])+sum(Oct_newcase_sg[1:3]))
+jun_sep_uk[1:4]=c(sum(Jun_to_Sep_newcase_uk[4:33]),sum(Jun_to_Sep_newcase_uk[34:64]),sum(Jun_to_Sep_newcase_uk[65:95]),sum(Jun_to_Sep_newcase_uk[96:122])+sum(Oct_newcase_uk[1:3]))
+jun_sep_us[1:4]=c(sum(Jun_to_Sep_newcase_us[4:33]),sum(Jun_to_Sep_newcase_us[34:64]),sum(Jun_to_Sep_newcase_us[65:95]),sum(Jun_to_Sep_newcase_us[96:122])+sum(Oct_newcase_us[1:3]))
 
 oct_sg=sum(Oct_newcase_sg[1:31])
 oct_uk=sum(Oct_newcase_uk[1:31])
@@ -15,7 +15,7 @@ oct_us=sum(Oct_newcase_us[1:31])
 
 total_world_jun_sep[1:4]=six_nine_sg[1:4]+six_nine_uk[1:4]+six_nine_us[1:4]
 total_world_oct=oct_sg+oct_uk+oct_us
-
+date_oct=seq(as.Date("2021-10-01"),by="day",length.out=31)
 
 #total_plot
 #sg
