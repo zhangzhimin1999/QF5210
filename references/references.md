@@ -6,6 +6,8 @@ Cov:
 
 2.Recovery rate: Monira Mollazehi, Mohammad Mollazehi, Abdel-Salam G. Abdel-Salam et al. Modeling Survival Time to Recovery from COVID-19: A Case Study on Singapore, 30 March 2020, PREPRINT (Version 2) available at Research Square [https://doi.org/10.21203/rs.3.rs-18600/v2]
 
+3.Smith, David; Moore, Lang The SIR model for spread of disease, Journal of online mathematics and its applications JOMA 2001 v. 1 no. 3
+
 
 Unemployment:
 
