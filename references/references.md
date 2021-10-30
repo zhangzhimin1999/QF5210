@@ -2,7 +2,7 @@ This folder is for references.
 
 Cov:
 
-1.Data resource: https://www.worldometers.info/coronavirus/#countries
+1.Active case data resource: https://www.worldometers.info/coronavirus/#countries
 
 2.Recovery rate: Monira Mollazehi, Mohammad Mollazehi, Abdel-Salam G. Abdel-Salam et al. Modeling Survival Time to Recovery from COVID-19: A Case Study on Singapore, 30 March 2020, PREPRINT (Version 2) available at Research Square [https://doi.org/10.21203/rs.3.rs-18600/v2]
 
